@@ -1,0 +1,57 @@
+.header 
+  height: 775px
+  background: linear-gradient(180deg, #F4FAFF 0%, #E5EEF4 100%)
+  .container
+    background: url(../img/header__bg.png) no-repeat 444px 157px
+  &__left
+    width: 400px
+    margin-top: 199px
+    h1
+      position: relative
+      @include bold
+      color: #56C4E9
+      font-size: 45px
+      line-height: 50px
+      margin-left: 21px
+      &::before
+        position: absolute
+        content: ''
+        width: 129px
+        height: 129px
+        background: url(../img/star.png) bottom
+        bottom: 11px
+        left: -72px
+    h2
+      @include semibold
+      font-size: 21px
+      line-height: 29px
+      margin-top: 15px
+  &__link-work
+    margin-top: 7px
+    margin-left: -1px
+  &__list
+    margin-top: 14px
+  &__item
+    font-size: 20px
+    display: flex
+    align-items: center
+    margin-top: 9px
+    &-disc
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background-color: #56C4E9
+      margin-top: 1px
+    h3
+      font-size: 20px
+      line-height: 24px
+      margin-left: 13px
+  .main-btn
+    display: block
+    margin-top: 31px
+    margin-bottom: 15px
+  &__left_icon
+    display: flex
+    width: 102px
+    margin-top: 89px
+    justify-content: space-between
