@@ -21,7 +21,7 @@ li
 
 .container 
   display: flex
-  justify-content: space-between
+  flex-direction: column
   max-width: 1230px
   height: 100%
   padding-left: 30px
@@ -56,9 +56,10 @@ li
     background: url(../img/arrow_link.png) no-repeat
     top: 7px
     right: -18px
-
   &:hover
     color: #33CCFF
+    &::after
+      background: url(../img/arrow_link_hover.png) no-repeat
 
 .icon-soc
   display: flex
