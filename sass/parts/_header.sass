@@ -2,7 +2,8 @@
   height: 775px
   background: linear-gradient(180deg, #F4FAFF 0%, #E5EEF4 100%)
   .container
-    background: url(../img/header__bg.png) no-repeat 444px 157px
+    background: url(../img/header__bg.png) no-repeat 98.5% 157px
+    background-size: 63.333%
   &__left
     width: 400px
     margin-top: 199px
@@ -62,3 +63,94 @@
         background-color: #2CA5E0
       &:nth-child(3):hover
         background-color: #33CCFF
+@media screen and (max-width: 992px)
+  .header
+    height: 564px
+    .container
+      background: url(../img/header__bg.png) no-repeat 97.28% 151px
+      background-size: 59.9%
+    &__left
+      width: 287px
+      margin-top: 133px
+      h1
+        font-size: 36px
+        line-height: 42px
+        margin-left: 18px
+        &::before
+          width: 149px
+          height: 149px
+          background-size: contain
+          bottom: 10px
+          left: -81px
+      h2 
+        font-size: 19px
+        line-height: 27px
+        margin-top: 9px
+    &__link-work
+      margin-top: 5px
+    &__list
+      margin-top: 9px
+    &__item
+      margin-top: 8px
+      &-disc
+        width: 8px
+        height: 8px
+      h3 
+        font-size: 16px
+        line-height: 19px
+        margin-left: 11px
+    .main-btn
+      margin-top: 24px
+      margin-bottom: 13px
+    &__left_icon
+      margin-top: 45px
+@media screen and (max-width: 649px)
+  .header
+    height: 451px
+    .container
+      background: url(../img/header__bg.png) no-repeat 97.28% 151px
+      background-size: 50%
+      padding-left: 36px
+      padding-right: 36px
+    &__left
+      width: 250px
+      margin-top: 90px
+      h1
+        margin-left: -2px
+        &::before
+          width: 149px
+          height: 149px
+          background-size: contain
+          bottom: 10px
+          left: -81px
+      h2 
+        font-size: 16px
+        line-height: 22px
+        margin-top: 7px
+    &__link-work
+      margin-top: 5px
+    &__list
+      margin-top: 9px
+    &__item
+      margin-top: 8px
+      &-disc
+        width: 8px
+        height: 8px
+      h3 
+        font-size: 16px
+        line-height: 19px
+        margin-left: 11px
+    .main-btn
+      margin-top: 17px
+    &__left_icon
+      display: none
+@media screen and (max-width: 499px)
+  .header
+    height: 451px
+    .container
+      background: none
+      align-items: center
+    &__left
+      width: 250px
+      margin-top: 90px
+

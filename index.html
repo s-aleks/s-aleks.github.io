@@ -11,6 +11,47 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar__wrap">
+        <div class="nav-menu-wrap">
+          <button class="nav-menu">
+            <span class="nav-menu__line"></span>
+            <span class="nav-menu__line"></span>
+            <span class="nav-menu__line"></span>
+          </button>
+        </div>
+        <a href="#header" class="navbar-brand">
+          <img src="img/logo.png" alt="Бизнес Учёт">
+          <h2>SkyWeb</h2>
+        </a>
+        <div class="navbar__left_icon" id="navbar__left_icon">
+            <a href="" class="icon-soc"><img src="img/icon_vk.png" alt="VK"></a>
+            <a href="" class="icon-soc"><img src="img/icon_tg.png" alt="Telegram"></a>
+            <a href="" class="icon-soc"><img src="img/icon_mail.png" alt="E-mail"></a>
+        </div>
+        <ul class="navbar__nav">
+          <li class="nav_item active">
+            <a href="#header">Главная</a>
+          </li>
+          <li class="nav_item">
+            <a href="#about">О нашей работе</a>
+          </li>
+          <li class="nav_item">
+            <a href="#portfolio">Портфолио</a>
+          </li>
+          <li class="nav_item">
+            <a href="#price">Стоимость</a>
+          </li>
+        </ul>
+        <div class="navbar__right_icon">
+          <a href="" class="icon-soc"><img src="img/icon_whatsapp.png" alt="WhatsApp"></a>
+          <a href="" class="icon-soc"><img src="img/icon_viber.png" alt="Viber"></a>
+          <a href="" class="icon-soc"><img src="img/icon_skype.png" alt="Skype"></a>
+        </div>
+      </div>
+    </div>
+  </nav>
   <header class="header" id="header">
     <div class="container">
       <div class="header__left">
@@ -59,21 +100,27 @@
             <p>Фото демонстрирует позитивный результат использования  товара  или услуги. Будь-то вкусный бургер или стройная фигура после похода в спортзал.</p>
             <p class="about__content_text-p">Видишь результат, хочешь так же, готов заказать!</p>
           </div>
-          <div class="about__content_img1"><img src="img/about__img1.jpg" alt="Тёплый плед"></div>
-          <div class="about__content_img2"><img src="img/about__img2.jpg" alt="Море"></div>
+          <div class="about__content_img1">
+            <img class="desk" src="img/about__img1.jpg" alt="Тёплый плед">
+            <img class="table" src="img/about__img_tab1.jpg" alt="Тёплый плед">
+          </div>
+          <div class="about__content_img2">
+            <img class="desk" src="img/about__img2.jpg" alt="Море">
+            <img class="table" src="img/about__img_tab2.jpg" alt="Море">
+          </div>
           <div class="about__content_text text2">
             <div class="about__content_heading">
               <img src="img/about__icon3.png" alt="Краткость">
               <h3>Краткость – сестра таланта</h3>
             </div>
             <p>Короткие понятные заголовки и тексты, объясняющие самую суть.</p>
-            <p class="about__content_text-p">Фото и цвет уже рассказали о продукте достаточно. Внимание<br>и терпение ресурсы исчерпаемые, не стоит нагружать клиентов большим количеством информации.</p>
+            <p class="about__content_text-p">Фото и цвет уже рассказали о продукте достаточно. Внимание <br class="no-table">и терпение ресурсы исчерпаемые, не стоит нагружать клиентов большим количеством информации.</p>
             <div class="about__content_heading">
               <img src="img/about__icon4.png" alt="Иерархия">
               <h3>Визуальная иерархия</h3>
             </div>
             <p>Выделение важных элементов (цветом, размером, контрастом и т.д.) позволяет выстроить порядок, в котором объекты замечаются посетителем: картинка > заголовок > кнопка > телефон и т.д.</p>
-            <p class="about__content_text-p">Таким образом, дизайн не образует визуальной каши, а плавно,<br>в правильной последовательности раскрывается, делая опыт пользователя комфортным и удобным.</p>
+            <p class="about__content_text-p">Таким образом, дизайн не образует визуальной каши, а плавно, <br class="no-table">в правильной последовательности раскрывается, делая опыт пользователя комфортным и удобным.</p>
           </div>
         </div>
       </div>
@@ -119,7 +166,7 @@
       <div class="portfolio__wrap">
         <div class="portfolio__item item7">
           <a href="" class="portfolio__item_a">
-            <p class="portfolio__item_a-desc">Веб-сайт для психолога </p>
+            <p class="portfolio__item_a-desc">Веб-сайт для психолога</p>
           </a>
         </div>
         <div class="portfolio__item item8">
@@ -146,6 +193,80 @@
         </div>
       </div>
       <button id="portfolio-btn" class="main-btn">Показать больше</button>
+      <div class="portfolio__wrap__slider">
+        <div class="portfolio__slide">
+          <div class="portfolio__slide_item item1">
+            <a href="" class="portfolio__item_a">
+              <p class="portfolio__item_a-desc">Веб-сайт, визитка и оформление <br> группы вКонтакте для психолога</p>
+            </a>
+          </div>
+          <div class="portfolio__slide_item item2">
+            <a href="" class="portfolio__item_a">
+              <p class="portfolio__item_a-desc">Веб-сайт и логотип бухгалтерских услуг</p>
+            </a>
+          </div>
+        </div>
+        <div class="portfolio__slide">
+          <div class="portfolio__slide_item item3">
+            <a href="" class="portfolio__item_a">
+              <p class="portfolio__item_a-desc">Логотип для студии по наращиванию<br>ресниц и укладки волос</p>
+            </a>
+          </div>
+          <div class="portfolio__slide_item item4">
+            <a href="" class="portfolio__item_a">
+              <p class="portfolio__item_a-desc">Веб-сайт музыкальной группы</p>
+            </a>
+          </div>
+        </div>
+        <div class="portfolio__slide">
+          <div class="portfolio__slide_item item5">
+            <a href="" class="portfolio__item_a">
+              <p class="portfolio__item_a-desc">Веб-сайт спортзала</p>
+            </a>
+          </div>
+          <div class="portfolio__slide_item item6">
+            <a href="" class="portfolio__item_a">
+              <p class="portfolio__item_a-desc">Веб-сайт продажи неоновых масок</p>
+            </a>
+          </div>
+        </div>
+        <div class="portfolio__slide">
+          <div class="portfolio__slide_item item7">
+            <a href="" class="portfolio__item_a">
+              <p class="portfolio__item_a-desc">Веб-сайт для психолога</p>
+            </a>
+          </div>
+          <div class="portfolio__slide_item item8">
+            <a href="" class="portfolio__item_a">
+              <p class="portfolio__item_a-desc">Веб-сайт продажи щебня</p>
+            </a>
+          </div>
+        </div>
+        <div class="portfolio__slide">
+          <div class="portfolio__slide_item item9">
+            <a href="" class="portfolio__item_a">
+              <p class="portfolio__item_a-desc">Веб-сайт музыкальной группы</p>
+            </a>
+          </div>
+          <div class="portfolio__slide_item item10">
+            <a href="" class="portfolio__item_a">
+              <p class="portfolio__item_a-desc">Набросок бизнес-сайта</p>
+            </a>
+          </div>
+        </div>
+        <div class="portfolio__slide">
+          <div class="portfolio__slide_item item11">
+            <a href="" class="portfolio__item_a">
+              <p class="portfolio__item_a-desc">Набросок сайта боевых искусств</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__slider_control">
+        <button class="slide-left"></button>
+        <img src="img/slide_icon.jpg" alt="Слайд">
+        <button class="slide-right"></button>
+      </div>
     </div>
   </section>
   <section id="price" class="price">
@@ -184,7 +305,13 @@
       </div>
     </div>
   </section>
-  
+  <footer>
+    <div class="container">
+      <a href="" class="logo"><img src="img/logo.png" alt="SkyWeb"></a>
+      <button class="main-btn">Оставить заявку</button>
+      <a href="" class="main-link">Задать вопрос</a>
+    </div>
+  </footer>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

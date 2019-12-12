@@ -16,7 +16,7 @@
     display: flex
     flex-wrap: wrap
     &_text
-      width: 48.7%
+      width: 48.73%
       padding-top: 17px
       padding-bottom: 38px
       background: #ffffff
@@ -43,12 +43,122 @@
       margin-top: 10px
     &_img1
       margin-top: -34px
-      width: 51.3%
+      width: 51.271%
       align-self: flex-end
       img
         width: 100%
     &_img2
       margin-bottom: -67px
-      width: 48.7%
+      width: 48.73%
       img
         width: 100%
+    .table
+      display: none
+@media screen and (max-width: 1190px)
+  .about
+    padding-top: 54px
+    padding-bottom: 92px
+    .container
+      width: 768px
+      padding-left: 22px
+      padding-right: 22px
+    h2
+      font-size: 35px
+      line-height: 43px
+    &__wrap
+      margin-top: 52px
+    &__content
+      &_text
+        width: 48.6%
+        padding-top: 12px
+        padding-bottom: 28px
+      .text2
+        padding-left: 20px
+        .about__content_heading
+          padding-top: 1px
+        p
+          width: 108%
+      &_heading
+        margin-top: 23px
+        img
+          margin-right: 16px
+          width: 39px
+        h3
+          @include semibold
+          font-size: 20px
+          line-height: 24px
+      p
+        font-size: 15px
+        line-height: 23px
+        margin-top: 15px
+        padding-right: 19px
+      .desk
+        display: none
+      .table
+        display: inline
+      .about__content_text-p
+        margin-top: 8px
+      &_img1
+        margin-top: -23px
+        width: 51.4%
+        align-self: auto
+      &_img2
+        width: 48.6%
+@media screen and (max-width: 767px)
+  .about
+    padding-top: 35px
+    padding-bottom: 0
+    background: #ffffff
+    .container
+      width: 100%
+      padding-left: 15px
+      padding-right: 15px
+    h2
+      font-size: 28px
+      line-height: 30px
+    &__wrap
+      margin-top: 0
+    &__content
+      flex-direction: column
+      &_text
+        width: 100%
+        padding-top: 12px
+        padding-bottom: 28px
+      .text2
+        padding-left: 0
+        .about__content_heading
+          padding-top: 1px
+        p
+          width: 100%
+      &_heading
+        margin-top: 23px
+        img
+          margin-right: 16px
+          width: 39px
+        h3
+          @include semibold
+          font-size: 18px
+          line-height: 22px
+      p
+        font-size: 14px
+        line-height: 22px
+        margin-top: 15px
+        padding-right: 19px
+      .desk
+        display: none
+      .table
+        display: inline
+      .about__content_text-p
+        margin-top: 8px
+      &_img1
+        margin-top: 0
+        width: 100%
+
+      &_img2
+        width: 100%
+        margin-bottom: 0
+        order: 1
+
+
+
+

@@ -1,0 +1,92 @@
+.navbar
+  position: fixed
+  width: 100%
+  height: 111px
+  z-index: 100
+  transition: .3s
+  &__wrap
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+  .nav-menu-wrap
+    display: none
+  &__left_icon
+    display: none
+    width: 102px
+    justify-content: space-between
+  &-brand
+    h2
+      display: none
+      color: #ffffff
+      font-size: 20px
+  &__nav
+    display: flex
+    width: 605px
+    justify-content: space-between
+    font-size: 20px
+    line-height: 24px
+    margin-bottom: 1px
+    a
+      position: relative
+      &::after
+        position: absolute
+        content: ''
+        width: 0
+        height: 2px
+        left: 0
+        bottom: -2px
+        background-color: #56C4E9
+        transition: width 0.5s
+    .active a, a:hover
+      font-weight: 600
+      color: #56C4E9
+      transition: width 0.5s
+      &::after
+        width: 99%
+  &__right_icon
+    display: flex
+    width: 102px
+    justify-content: space-between
+    .icon-soc
+      &:nth-child(1):hover
+        background: #25D366
+      &:nth-child(2):hover
+        background: #665CAC
+      &:nth-child(3):hover
+        background: #28A8EA
+  &.scroll
+    height: 36px
+    background: linear-gradient(180deg, rgba(86, 196, 233, 0.95) 0%, rgba(46, 184, 231, 0.95) 100%)
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1)
+    transition: .3s
+    .navbar-brand img
+      display: none
+    .navbar-brand h2
+      display: inline
+    .nav_item a
+      color: #ffffff
+      &:after
+        background-color: #ffffff
+        bottom: -6px
+    .icon-soc
+      background: transparent
+      &:hover
+        background: transparent
+        border: 1px solid #FFFFFF
+@media screen and (max-width: 992px)
+  .navbar
+    height: 68px
+    &-brand
+      img
+        width: 49px
+        height: 47px
+    &__nav
+      width: 442px
+      font-size: 16px
+      line-height: 19px
+@media screen and (max-width: 767px)
+  .navbar
+    display: none
+
+  
