@@ -13,6 +13,8 @@
     display: flex
     flex-direction: row
     margin: 17px -15px
+    &:nth-child(4), &:nth-child(5)
+      display: none
   .item1
     background: url(../img/portfolio/portfolio_prev_desktop_1.jpg) no-repeat center
   .item2
@@ -35,8 +37,7 @@
     background: url(../img/portfolio/portfolio_prev_desktop_10.jpg) no-repeat center
   .item11
     background: url(../img/portfolio/portfolio_prev_desktop_11.jpg) no-repeat center
-    &:nth-child(4), &:nth-child(5)
-      display: none
+
   &__item
     width: 100%
     max-width: 370px
@@ -64,16 +65,13 @@
         color: #ffffff
         text-align: center
         line-height: 25px
-    &:hover
-      .portfolio__item_a-desc
-        background: linear-gradient(180deg, rgba(51, 204, 255, 0.5) 0%, #33CCFF 100%)
 
   .main-btn
     margin: 43px auto -40px
     border-radius: 0px 0px 5px 5px
   &__wrap__slider
     display: none
-  .slider__controls 
+  &__slider_control
     display: none
 @media screen and (max-width: 992px)
   .portfolio

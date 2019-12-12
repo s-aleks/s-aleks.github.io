@@ -116,7 +116,7 @@ $(window).scroll(function () {
   }
 });
 
-
+//portfolio
 $('#portfolio-btn').click(function(e){
   $(this).toggleClass('active');
   if ($(this).hasClass('active')) {
