@@ -19,7 +19,13 @@
             <span class="nav-menu__line"></span>
             <span class="nav-menu__line"></span>
             <span class="nav-menu__line"></span>
+            <div class="open-menu">
+              <span class="open-menu__line"></span>
+              <span class="open-menu__line"></span>
+              <span class="open-menu__line"></span>
+            </div>
           </button>
+          <p>Меню</p>
         </div>
         <a href="#header" class="navbar-brand">
           <img src="img/logo.png" alt="Бизнес Учёт">
@@ -31,6 +37,9 @@
             <a href="" class="icon-soc"><img src="img/icon_mail.png" alt="E-mail"></a>
         </div>
         <ul class="navbar__nav">
+          <a href="#header" class="navbar-brand-mob">
+            <img src="img/logo.png" alt="Бизнес Учёт">
+          </a>
           <li class="nav_item active">
             <a href="#header">Главная</a>
           </li>
@@ -43,6 +52,10 @@
           <li class="nav_item">
             <a href="#price">Стоимость</a>
           </li>
+          <button class="main-btn">Оставить заявку</button>
+          <div class="wrap__main-link">
+            <a href="" class="main-link">Задать вопрос</a>
+          </div>
         </ul>
         <div class="navbar__right_icon">
           <a href="" class="icon-soc"><img src="img/icon_whatsapp.png" alt="WhatsApp"></a>
@@ -265,6 +278,14 @@
       <div class="portfolio__slider_control">
         <button class="slide-left"></button>
         <img src="img/slide_icon.jpg" alt="Слайд">
+        <div class="portfolio__slider_controls">
+          <span class="portfolio__slider_controls-item"></span>
+          <span class="portfolio__slider_controls-item"></span>
+          <span class="portfolio__slider_controls-item"></span>
+          <span class="portfolio__slider_controls-item"></span>
+          <span class="portfolio__slider_controls-item"></span>
+          <span class="portfolio__slider_controls-item"></span>
+        </div>
         <button class="slide-right"></button>
       </div>
     </div>
@@ -303,6 +324,15 @@
           </div>
         </div>
       </div>
+      <div class="price__slider_control">
+        <button class="slide-left"></button>
+        <img src="img/slide_icon.jpg" alt="Слайд">
+        <div class="price__slider_controls">
+          <span class="price__slider_controls-item"></span>
+          <span class="price__slider_controls-item"></span>
+        </div>
+        <button class="slide-right"></button>
+      </div>
     </div>
   </section>
   <footer>
@@ -313,8 +343,114 @@
     </div>
   </footer>
 
+  <!-- popup callback-->
+  <div class="popup popup-callback">
+    <div class="popup__wrap">
+      <div class="popup__content">
+        <button class="close"></button>
+        <h3>Оставить заявку</h3>
+        <p>Вы можете связаться с нами любым удобным для вас способом:</p>
+        <div class="popup__icons">
+          <a href="" class="popup__icon-link">
+            <div class="popup__icon"><img src="img/icon_vk.png" alt="VK"></div>
+            <p>вКонтакте</p>
+          </a>
+          <a href="" class="popup__icon-link">
+            <div class="popup__icon"><img src="img/icon_viber.png" alt="Viber"></div>
+            <p>Viber</p>
+          </a>
+          <a href="" class="popup__icon-link">
+            <div class="popup__icon"><img src="img/icon_whatsapp.png" alt="WhatsApp"></div>
+            <p>WhatsApp</p>
+          </a>
+          <a href="" class="popup__icon-link">
+            <div class="popup__icon"><img src="img/icon_tg.png" alt="Telegram"></div>
+            <p>Telegram</p>
+          </a>
+          <a href="" class="popup__icon-link">
+            <div class="popup__icon"><img src="img/icon_skype.png" alt="Skype"></div>
+            <p>Skype</p>
+          </a>
+          <a href="" class="popup__icon-link">
+            <div class="popup__icon"><img src="img/icon_mail.png" alt="E-mail"></div>
+            <p>eMail</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- popup quest -->
+  <div class="popup popup-quest">
+    <div class="popup__wrap">
+      <div class="popup__content">
+        <button class="close"></button>
+        <h3>Задать вопрос</h3>
+        <p>Вы можете задать вопрос любым удобным для вас способом:</p>
+        <div class="popup__icons">
+          <a href="" class="popup__icon-link">
+            <div class="popup__icon"><img src="img/icon_vk.png" alt="VK"></div>
+            <p>вКонтакте</p>
+          </a>
+          <a href="" class="popup__icon-link">
+            <div class="popup__icon"><img src="img/icon_viber.png" alt="Viber"></div>
+            <p>Viber</p>
+          </a>
+          <a href="" class="popup__icon-link">
+            <div class="popup__icon"><img src="img/icon_whatsapp.png" alt="WhatsApp"></div>
+            <p>WhatsApp</p>
+          </a>
+          <a href="" class="popup__icon-link">
+            <div class="popup__icon"><img src="img/icon_tg.png" alt="Telegram"></div>
+            <p>Telegram</p>
+          </a>
+          <a href="" class="popup__icon-link">
+            <div class="popup__icon"><img src="img/icon_skype.png" alt="Skype"></div>
+            <p>Skype</p>
+          </a>
+          <a href="" class="popup__icon-link">
+            <div class="popup__icon"><img src="img/icon_mail.png" alt="E-mail"></div>
+            <p>eMail</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- popup portfolio -->
+  <div class="popup popup-portfolio">
+    <div class="popup__wrap">
+      <div class="popup__nav-portfolio">
+        <button class="back">
+          <div class="back__wrap">
+            <div class="circle">
+              <img src="img/back.png" alt="">
+            </div>
+            <p>Вернуться</p>
+          </div>
+        </button>
+        <ul class="popup__nav-links">
+          <li><button class="popup__nav-link link-pc"><img src="img/pc__popup-port.png" alt="PC"></button></li>
+          <li><button class="popup__nav-link link-tablet"><img src="img/tablet__popup-port.png" alt="Планшет"></button></li>
+          <li><button class="popup__nav-link link-mob"><img src="img/mob__popup-port.png" alt="Телефон"></button></li>
+          <li><button class="popup__nav-link link-card"><img src="img/card__popup-port.png" alt="Визитка"></button></li>
+          <li><button class="popup__nav-link link-vk"><img src="img/vk__popup-port.png" alt="вКонтакте"></button></li>
+          <li><button class="popup__nav-link link-site"><img src="img/site__popup-port.png" alt="Перейти на сайт"></button></li>
+        </ul>
+      </div>
+      <div class="container">
+        <h2 class="popup__portfolio-h">Компьютерная версия</h2>
+        <div class="layer">
+          <img src="img/portfolio/layers/1/pc.jpg" alt="макет">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery.touchSwipe.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -60,6 +60,7 @@ li
     color: #33CCFF
     &::after
       background: url(../img/arrow_link_hover.png) no-repeat
+      background-size: contain
 
 .icon-soc
   display: flex
@@ -70,6 +71,8 @@ li
   background: #56C4E9
   border-radius: 4px
   transition: .2s
+.no-scroll
+  overflow: hidden
 
 @media screen and (max-width: 992px)
   html
@@ -95,5 +98,8 @@ li
       right: -15px
       top: 5px
       background-size: contain
-      
-
+@media screen and (max-width: 767px)
+  html
+    .container
+      padding-left: 15px
+      padding-right: 15px

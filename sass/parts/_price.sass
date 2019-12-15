@@ -55,9 +55,69 @@
         span
           display: inline-block
           margin-top: 10px
-@media screen and (max-width: 992px)
+  &__slider_control
+    display: none
+@media (min-width: 768px) and (max-width: 992px)
   .price
     padding-top: 54px
+    padding-bottom: 0
+    .container
+      overflow: hidden
+      padding-bottom: 89px
+    h2
+      font-size: 35px
+      line-height: 43px
+    &__wrap
+      display: flex
+      width: 1000px
+      margin-left: -10px
+      margin-right: -10px 
+    &__item
+      min-width: 352px
+      height: 478px
+      margin-left: 10px
+      margin-right: 10px
+      &-heading
+        height: 125px
+        background: linear-gradient(180deg, #2EB8E7 0%, rgba(46, 184, 231, 0.5) 100%)
+        border-radius: 10px 10px 0 0
+        h3
+          font-size: 20px
+          line-height: 24px
+      &:nth-child(3)
+        opacity: 0
+    &__slider_control
+      justify-content: center
+      align-items: center
+      position: relative
+      display: flex
+      margin-top: 24px
+      img
+        margin: 0 7px
+      .slide-left
+        width: 34px
+        height: 34px
+        background: url(../img/arrow-slide-left.svg) no-repeat center
+      .slide-right
+        width: 34px
+        height: 34px
+        background: url(../img/arrow-slide-right.svg) no-repeat center
+    &__slider_controls
+      position: absolute
+      display: flex
+      bottom: -20px
+      left: 348px
+      width: 28px
+      height: 9px
+      justify-content: space-between
+      &-item
+        width: 9px
+        height: 9px
+        border: 2px solid #56C4E9
+        border-radius: 2px
+        &:first-child
+          background: #56C4E9
+
 @media screen and (max-width: 767px)
   .price
     padding-top: 34px
