@@ -453,12 +453,42 @@ $('.close').click(function(){
 });
 
 //popup portfolio
-$('.item1').click(function(){
-  $('.popup-portfolio').addClass('popup__open');
+$('.portfolio__item, .portfolio__slide_item').click(function(){
+  itemTitle = $(this).attr('name');
+  $('#' + itemTitle).addClass('popup__open');
   $('body').addClass('no-scroll');
   event.preventDefault();
+
+  if ($(window).width() < 768){
+    $('.back__wrap p').html('Назад');
+    if  ($('.popup-portfolio').hasClass('popup__open')){
+      $('.nav-menu-wrap').css('opacity','0');
+    }else{
+      $('.nav-menu-wrap').css('opacity','1');
+    };
+  }else{
+    $('.back__wrap p').html('Вернуться');
+  };
+
+  $('.popup__nav-link').click(function(){
+    imgAlt = $(this).children('img').attr('alt');
+    imgTitle = $(this).children('img').attr('title')
+    $('.layer img').removeClass('layer-active');
+    $('.layer img[alt = '+imgAlt+']').addClass('layer-active');
+    $('.popup__nav-link').removeClass('active');
+    $(this).addClass('active');
+    
+    $('#' + itemTitle + ' .popup__portfolio-h').html(imgTitle);
+  });
+
+  $('.back').click(function(){
+    $('.popup-portfolio').removeClass('popup__open');
+    $('body').removeClass('no-scroll');
+    $('.popup__nav-link').removeClass('active');
+    $('.layer img').removeClass('layer-active');
+    $('.layer img:first-child').addClass('layer-active');
+    $('.nav-menu-wrap').css('opacity','1');
+  });
 });
-$('.back').click(function(){
-  $('.popup-portfolio').removeClass('popup__open');
-  $('body').removeClass('no-scroll');
-});
+
+

@@ -2189,6 +2189,11 @@ footer .container .main-link {
 
 .popup-portfolio.popup .container {
   padding-top: 128px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .popup-portfolio.popup .popup__wrap {
@@ -2238,8 +2243,7 @@ footer .container .main-link {
           justify-content: center;
   width: 178px;
   height: 49px;
-  background: #FFFFFF;
-  opacity: 0.85;
+  background: rgba(255, 255, 255, 0.85);
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
   border-radius: 24.5px;
@@ -2266,6 +2270,7 @@ footer .container .main-link {
 }
 
 .popup-portfolio.popup .popup__nav-portfolio .back__wrap p {
+  font-family: 'ProximaNova-Regular', sans-serif;
   font-size: 17px;
   line-height: 21px;
   color: #56C4E9;
@@ -2287,8 +2292,7 @@ footer .container .main-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #FFFFFF;
-  opacity: 0.85;
+  background: rgba(255, 255, 255, 0.85);
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
   border-radius: 0px 0px 5px 5px;
@@ -2327,12 +2331,125 @@ footer .container .main-link {
   padding-left: 10px;
 }
 
-.popup-portfolio.popup .popup__nav-link:hover {
+.popup-portfolio.popup .popup__nav-link:hover, .popup-portfolio.popup .popup__nav-link.active {
   background: #56C4E9;
 }
 
+.popup-portfolio.popup .layer {
+  padding-bottom: 150px;
+}
+
 .popup-portfolio.popup .layer img {
+  display: none;
   width: 100%;
+}
+
+.popup-portfolio.popup .layer .layer-active {
+  display: inline;
+}
+
+@media screen and (max-width: 991px) {
+  .popup-portfolio.popup {
+    top: 36px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F4FAFF), to(#E5EEF4));
+    background: linear-gradient(180deg, #F4FAFF 0%, #E5EEF4 100%);
+  }
+  .popup-portfolio.popup .container {
+    padding-top: 116px;
+  }
+  .popup-portfolio.popup .popup__portfolio-h {
+    margin-bottom: 39px;
+  }
+  .popup-portfolio.popup .popup__nav-portfolio {
+    max-width: 992px;
+  }
+  .popup-portfolio.popup .popup__nav-portfolio .back {
+    position: absolute;
+    top: 23px;
+    left: 22px;
+  }
+  .popup-portfolio.popup .popup__nav-portfolio .back__wrap {
+    padding-left: 0;
+    width: 49px;
+  }
+  .popup-portfolio.popup .popup__nav-portfolio .back__wrap p {
+    display: none;
+  }
+  .popup-portfolio.popup .popup__nav-links {
+    width: 424px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .popup-portfolio.popup {
+    top: 36px;
+    background: #ffffff;
+  }
+  .popup-portfolio.popup .container {
+    padding-top: 74px;
+  }
+  .popup-portfolio.popup .popup__portfolio-h {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .popup-portfolio.popup .popup__nav-portfolio {
+    max-width: 767px;
+    height: 80px;
+  }
+  .popup-portfolio.popup .popup__nav-portfolio .back {
+    position: absolute;
+    top: -36px;
+    left: 10px;
+  }
+  .popup-portfolio.popup .popup__nav-portfolio .back__wrap {
+    width: 78px;
+    height: 34px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+  }
+  .popup-portfolio.popup .popup__nav-portfolio .back__wrap .circle {
+    top: 3px;
+    width: 27px;
+    height: 27px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+  }
+  .popup-portfolio.popup .popup__nav-portfolio .back__wrap .circle img {
+    width: 70%;
+  }
+  .popup-portfolio.popup .popup__nav-portfolio .back__wrap p {
+    display: inline;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+  .popup-portfolio.popup .popup__nav-links {
+    width: 320px;
+  }
+  .popup-portfolio.popup .popup__nav-link {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+  }
+  .popup-portfolio.popup .popup__nav-link img {
+    width: 100%;
+  }
+  .popup-portfolio.popup .popup__nav-link.link-mob img {
+    width: 78%;
+  }
+  .popup-portfolio.popup .popup__nav-link.link-site {
+    padding-left: 2px;
+  }
+  .popup-portfolio.popup .popup__nav-link.link-site img {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 640px) {
