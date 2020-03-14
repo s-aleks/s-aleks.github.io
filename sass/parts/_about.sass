@@ -111,8 +111,8 @@
     background: #ffffff
     .container
       width: 100%
-      padding-left: 22px
-      padding-right: 22px
+      padding-left: 0
+      padding-right: 0
     h2
       font-size: 28px
       line-height: 30px
@@ -122,10 +122,10 @@
       flex-direction: column
       &_text
         width: 100%
+        padding-left: 14px
         padding-top: 12px
         padding-bottom: 28px
       .text2
-        padding-left: 0
         .about__content_heading
           padding-top: 1px
         p
@@ -158,7 +158,11 @@
         width: 100%
         margin-bottom: 0
         order: 1
-
+@media screen and (max-width: 450px)
+  .about
+    h2
+      margin-left: 14px
+      text-align: left
 
 
 

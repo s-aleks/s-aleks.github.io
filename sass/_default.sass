@@ -48,6 +48,15 @@ li
   font-size: 20px
   line-height: 24px
   color: #56C4E9
+  &::before
+    content: ''
+    position: absolute
+    width: 0
+    height: 2px
+    left: 1px
+    bottom: -3px
+    background-color: #33CCFF
+    transition: width 0.3s
   &::after
     position: absolute
     content: ''
@@ -58,9 +67,10 @@ li
     right: -18px
   &:hover
     color: #33CCFF
+    &::before
+      width: 98%
     &::after
-      background: url(../img/arrow_link_hover.png) no-repeat
-      background-size: contain
+      display: none
 
 .icon-soc
   display: flex
